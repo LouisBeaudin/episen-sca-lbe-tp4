@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/episen-sca-lbe-back/episen-sca-lbe-backend.iml" filepath="$PROJECT_DIR$/episen-sca-lbe-back/episen-sca-lbe-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/episen-sca-lbe-front/episen-sca-lbe-front.iml" filepath="$PROJECT_DIR$/episen-sca-lbe-front/episen-sca-lbe-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/episen-sca-lbe-tp4.iml" filepath="$PROJECT_DIR$/.idea/episen-sca-lbe-tp4.iml" />
+    </modules>
+  </component>
+</project>
