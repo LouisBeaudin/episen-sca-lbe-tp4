@@ -1,0 +1,6 @@
+{
+  "/add": {
+    "target": "http://louisbeaudin/episen-sca-lbe-back",
+    "secure": false
+  }
+}
