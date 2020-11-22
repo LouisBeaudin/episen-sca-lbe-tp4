@@ -1,17 +1,32 @@
 version: "3"
 services:
-  app:
-    episen-sca-lbe-back:
-      image: louisbeaudin/episen-sca-lbe-back
-      port:
-      - "8080:8080"
-      volumes:
-        - ./log
-    episen-sca-lbe-front:
-      image: louisbeaudin/episen-sca-lbe-front
-      port:
-        - "4200:4200"
+  episen-sca-lbe-back:
+    image: back
+    ports:
+      - "8080"
+    volumes:
+      - ./log
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 300M
+        reservations:
+          cpus: "0.5"
+          memory: 200M
+      restart_policy:
+        condition: on-failure
 
+  episen-sca-lbe-front:
+    image: louisbeaudin/episen-sca-lbe-front
+    ports:
+      - "80"
+    volumes:
+      - ./logfront
+    healthcheck:
+       test: ["CMD", "curl", "-f", "http://localhost:80"]
     deploy:
       resources:
         limits:
@@ -20,3 +35,5 @@ services:
         reservations:
           cpus: "0.5"
           memory: 100M
+      restart_policy:
+        condition: on-failure
