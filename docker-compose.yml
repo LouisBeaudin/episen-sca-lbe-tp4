@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app:
+    episen-sca-lbe-back:
+      image: louisbeaudin/episen-sca-lbe-back
+      port:
+      - "8080:8080"
+      volumes:
+        - ./log
+    episen-sca-lbe-front:
+      image: louisbeaudin/episen-sca-lbe-front
+      port:
+        - "4200:4200"
+
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 200M
+        reservations:
+          cpus: "0.5"
+          memory: 100M

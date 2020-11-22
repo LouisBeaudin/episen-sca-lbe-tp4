@@ -26,7 +26,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/episen-sca-lbe-front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -44,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EpisenScaLbeBackendApplication">
+  <component name="RunManager" selected="Docker.episen-sca-lbe-back/Dockerfile">
     <configuration name="E2E Tests (episen-sca-lbe-front)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/episen-sca-lbe-front/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -64,6 +64,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="episen-sca-lbe-back/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="episen-sca-lbe-back/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Angular CLI Server" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/episen-sca-lbe-front/package.json" />
       <command value="run" />
@@ -74,6 +82,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.episen-sca-lbe-back/Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -85,7 +98,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605793822864</updated>
-      <workItem from="1605793824177" duration="4812000" />
+      <workItem from="1605793824177" duration="10405000" />
+      <workItem from="1605860046253" duration="1282000" />
+      <workItem from="1606050382985" duration="5104000" />
     </task>
     <servers />
   </component>
@@ -100,7 +115,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
